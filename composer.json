@@ -1,5 +1,5 @@
 {
-    "name": "email-sendgrid-system",
+    "name": "email/sendgrid-app",
     "description": "Sistema básico para enviar correos con SendGrid",
     "type": "project",
     "require": {
