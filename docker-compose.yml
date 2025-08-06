@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  email-app:
+    build: .
+    ports:
+      - "8083:80"
+    environment:
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - FROM_EMAIL=${FROM_EMAIL}
+      - FROM_NAME=${FROM_NAME}
+    volumes:
+      - .:/var/www/html
+      - ./vendor:/var/www/html/vendor
+    restart: unless-stopped
