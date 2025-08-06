@@ -11,5 +11,4 @@ services:
       - FROM_NAME=${FROM_NAME}
     volumes:
       - .:/var/www/html
-      - ./vendor:/var/www/html/vendor
     restart: unless-stopped
